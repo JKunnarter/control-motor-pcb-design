@@ -167,7 +167,7 @@ int main(void) {
 		setDuty(100 - duty);
 		LCD_GotoXY(1, 0);  
 		LCD_Print("Duty=");
-    
+
 		if (duty != last_duty) {
 			last_duty = duty;
 	
@@ -189,19 +189,19 @@ int main(void) {
     }
     
 		if (cap_flag) {
-            cap_flag = 0;
-            dt = this_cap - last_cap;
-            last_cap = this_cap;
-
-            t = (double)dt * PRESCALER / F_CPU;
-            f = 1.0 / t;            
-            RPM = (int) (f * 60.0) / PPR;         
+	            cap_flag = 0;
+	            dt = this_cap - last_cap;
+	            last_cap = this_cap;
+	
+	            t = (double)dt * PRESCALER / F_CPU;
+	            f = 1.0 / t;            
+	            RPM = (int) (f * 60.0) / PPR;         
 		}
 		
 		if (button_on) {
 			button_on = 0;
 			PORTB ^= (1 << PB5);
 			PORTB ^= (1 << PB3);
-    }
+    		}
 	}
 }
