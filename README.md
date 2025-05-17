@@ -16,7 +16,17 @@ Project này yêu cầu thiết kế mạch PCB (mạch in) với chức năng �
 - Encoder, đĩa tròn đục 20 lỗ.
 - Màn hình chọn LCD 16x2.
 - Nút bấm, chiết áp, led để điều khiển và hiển thị trạng thái.
+#### Atmega8
+#### L298n
+#### Encoder 
+#### LCD 16x2
 ### 2. Mô phỏng mạch trên Proteus
+#### Project gồm các khối chính như sau: 
++ Khối nguồn: Chịu trách nhiệm cấp nguồn cho toàn bộ hệ thống.
++ Mạch cầu H (L298n): Dùng để điều khiển động cơ.
++ Khối MCU: Vi điêu khiển của hệ thống, chịu trách nhiệm xử lý tín hiệu, điều khiển.
++ Các phím bấm, led hiển thị: Điều khiển và hiển thị trạng thái.
++ Khối hiển thị: LCD 16x2 hiển thị các thông số.
 ### 3. Thiết kế mạch trên Altium
 ### 4. Gia công mạch in 
 ### 5. Kiểm tra Project
